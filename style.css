@@ -10,84 +10,86 @@ body {
 ul {
     list-style: none;
 }
-.container {
+header {
     background-color: white;
-    width: 47%;
-    margin: 10% auto;
+    width: 36%;
+    margin: 9% auto;
     border-radius: 8px;
     overflow: hidden;
 }
 @media (max-width: 767px) {
-    .container {
+    header {
         width: 76%;
         margin-top: 13%;
     }
 }
-.container > div:first-child {
-    padding: 5%;
+header main {
+    padding: 6%;
 }
-.container div:first-child h2 {
+header main h2 {
     color: #40a8a9;
     font-size: 22px;
 }
-.container > div:first-child h3 {
+header main h3 {
     color: #bdd05d;
     margin: 2.5% 0 1%;
     font-size: 17px;
 }
 @media (max-width: 767px) {
-    .container > div:first-child h3 {
+    header main h3 {
         margin: 4.5% 0 4%;
     }
 }
-.container > div:first-child p {
+header main p {
     color: #babec9;
     font-size: smaller;
+    line-height: 1.7;
 }
 @media (max-width: 767px) {
-    .container > div:first-child p {
+    header main p {
         line-height: 1.6;
     }
 }
-.content {
+nav {
     display: flex;
 }
 @media (max-width: 767px) {
-    .content {
+    nav {
         display: block;
     }
 }
-.content h3 {
+nav h3,
+nav ul li:first-child {
     font-size: 17px;
     color: white;
     font-weight: 500;
 }
-.content div {
-    padding: 5%;
+nav div {
+    padding: 6%;
     flex-basis: 50%;
     background-color: #2bb3b1;
 }
-.content div > p {
+nav div > p {
     color: #dff2f5;
     font-size: 14px;
     margin-bottom: 12%;
 }
 @media (max-width: 767px) {
-    .content div > p {
+    nav div > p {
         margin-bottom: 8%;
     }
 }
-.content div > p span {
+nav div > p span {
     font-size: 14px;
     color: rgb(223 242 245 / 50%);
 }
-.content div > p:first-of-type {
+nav div > p:first-of-type {
     font-size: 26px;
     color: white;
     margin: 3% 0 2%;
     font-weight: 600;
 }
-.content button {
+nav button {
     width: 100%;
     border-radius: 3px;
     border: none;
@@ -99,19 +101,30 @@ ul {
     font-weight: 500;
 } 
 @media (max-width: 767px) {
-    .content button {
+    nav button {
         margin-bottom: 2%;
     }
 }
-.content ul {
-    padding: 5%;
+nav ul {
+    padding: 6%;
     flex-basis: 50%;
     background-color: #4abebd;
 }
-.content ul h3 {
+nav ul li:first-child {
     margin-bottom: 4%;
 }
-.content li {
+nav li {
     color: rgb(223 242 245 / 70%);
     font-size: smaller;
+}
+footer a { 
+    color: hsl(228, 45%, 44%);
+}
+footer {
+    position: absolute;
+    top: 15px; 
+    left: 50%; 
+    font-size: 11px; 
+    transform: translateX(-50%); 
+    text-align: center;
 }
